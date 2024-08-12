@@ -1,5 +1,5 @@
 const express = require("express");
-const addon = require("./build/Release/hello");
+const addon = require("./build/Release/addon");
 
 const app = express();
 const port = 3000;

@@ -419,6 +419,20 @@
     "xcode_version": "13.0",
     "nodedir": "/Users/mac/Library/Caches/node-gyp/20.15.0",
     "python": "/opt/homebrew/opt/python@3.12/bin/python3.12",
-    "standalone_static_library": 1
+    "standalone_static_library": 1,
+    "version_git_tag": "true",
+    "init_license": "MIT",
+    "registry": "https://registry.yarnpkg.com",
+    "version_commit_hooks": "true",
+    "bin_links": "true",
+    "strict_ssl": "true",
+    "save_prefix": "^",
+    "version_git_message": "v%s",
+    "user_agent": "yarn/1.22.22 npm/? node/v20.15.0 darwin arm64",
+    "ignore_scripts": "",
+    "version_git_sign": "",
+    "ignore_optional": "",
+    "init_version": "1.0.0",
+    "version_tag_prefix": "v"
   }
 }
