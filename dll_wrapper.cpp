@@ -1,5 +1,6 @@
 #include <napi.h>
 #include <windows.h>
+#include <iostream>
 
 // Function pointer types for the DLL functions
 typedef int (*DLLFunction)();
@@ -10,11 +11,18 @@ DLLFunction dllFunction = NULL;
 
 // Load the DLL and get function pointers
 bool LoadDLL() {
-    hDLL = LoadLibrary("Innovatrics.Sdk.commons.dll");
-    if (hDLL == NULL) return false;
+    // You can try both with a relative path and an absolute path
+    hDLL = LoadLibrary("C:\\Users\\emman\\OneDrive\\Desktop\\fingerprint-node-poc\\Innovatrics.Sdk.commons.dll");
+    if (hDLL == NULL) {
+        std::cerr << "Failed to load DLL. Error: " << GetLastError() << std::endl;
+        return false;
+    }
     
     dllFunction = (DLLFunction)GetProcAddress(hDLL, "SomeFunctionName");
-    if (dllFunction == NULL) return false;
+    if (dllFunction == NULL) {
+        std::cerr << "Failed to get function address. Error: " << GetLastError() << std::endl;
+        return false;
+    }
 
     return true;
 }

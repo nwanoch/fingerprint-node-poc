@@ -1,0 +1,4 @@
+C:\Users\emman\OneDrive\Desktop\fingerprint-node-poc\addon_wrapper.cpp;C:\Users\emman\OneDrive\Desktop\fingerprint-node-poc\build\Release\obj\addon\addon_wrapper.obj
+C:\Users\emman\OneDrive\Desktop\fingerprint-node-poc\sayhello.cpp;C:\Users\emman\OneDrive\Desktop\fingerprint-node-poc\build\Release\obj\addon\sayhello.obj
+C:\Users\emman\OneDrive\Desktop\fingerprint-node-poc\dll_wrapper.cpp;C:\Users\emman\OneDrive\Desktop\fingerprint-node-poc\build\Release\obj\addon\dll_wrapper.obj
+C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\src\win_delay_load_hook.cc;C:\Users\emman\OneDrive\Desktop\fingerprint-node-poc\build\Release\obj\addon\win_delay_load_hook.obj
