@@ -6,8 +6,7 @@ Release/obj.target/addon/addon_wrapper.o: ../addon_wrapper.cpp \
   /Users/mac/Library/Caches/node-gyp/20.15.0/include/node/js_native_api_types.h \
   /Users/mac/Library/Caches/node-gyp/20.15.0/include/node/node_api_types.h \
   /Users/mac/Documents/apps/pajuno/fingerprint-poc-node/node_modules/node-addon-api/napi-inl.h \
-  /Users/mac/Documents/apps/pajuno/fingerprint-poc-node/node_modules/node-addon-api/napi-inl.deprecated.h \
-  ../sayhello.h
+  /Users/mac/Documents/apps/pajuno/fingerprint-poc-node/node_modules/node-addon-api/napi-inl.deprecated.h
 ../addon_wrapper.cpp:
 /Users/mac/Documents/apps/pajuno/fingerprint-poc-node/node_modules/node-addon-api/napi.h:
 /Users/mac/Library/Caches/node-gyp/20.15.0/include/node/node_api.h:
@@ -16,4 +15,3 @@ Release/obj.target/addon/addon_wrapper.o: ../addon_wrapper.cpp \
 /Users/mac/Library/Caches/node-gyp/20.15.0/include/node/node_api_types.h:
 /Users/mac/Documents/apps/pajuno/fingerprint-poc-node/node_modules/node-addon-api/napi-inl.h:
 /Users/mac/Documents/apps/pajuno/fingerprint-poc-node/node_modules/node-addon-api/napi-inl.deprecated.h:
-../sayhello.h:

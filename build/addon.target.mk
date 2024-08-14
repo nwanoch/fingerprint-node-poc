@@ -13,7 +13,6 @@ DEFS_Debug := \
 	'-D_FILE_OFFSET_BITS=64' \
 	'-DOPENSSL_NO_PINSHARED' \
 	'-DOPENSSL_THREADS' \
-	'-DNAPI_DISABLE_CPP_EXCEPTIONS' \
 	'-DBUILDING_NODE_EXTENSION' \
 	'-DDEBUG' \
 	'-D_DEBUG'
@@ -68,7 +67,6 @@ DEFS_Release := \
 	'-D_FILE_OFFSET_BITS=64' \
 	'-DOPENSSL_NO_PINSHARED' \
 	'-DOPENSSL_THREADS' \
-	'-DNAPI_DISABLE_CPP_EXCEPTIONS' \
 	'-DBUILDING_NODE_EXTENSION'
 
 # Flags passed to all source files.
@@ -112,7 +110,7 @@ INCS_Release := \
 
 OBJS := \
 	$(obj).target/$(TARGET)/addon_wrapper.o \
-	$(obj).target/$(TARGET)/sayhello.o
+	$(obj).target/$(TARGET)/dll_wrapper.o
 
 # Add to the list of files we specially track dependencies for.
 all_deps += $(OBJS)

@@ -6,7 +6,8 @@ const port = 3000;
 
 app.get("/", (req, res) => {
   const result = addon.sayHello();
-  res.send(`C++ function said: ${result}`);
+  const dllResult = addon.callDLL();
+  res.send(`C++ function said: ${result}, DLL function returned: ${dllResult}`);
 });
 
 app.listen(port, () => {
