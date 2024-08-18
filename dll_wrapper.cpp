@@ -1,4 +1,3 @@
-#include <napi.h>
 #include <windows.h>
 #include <iostream>
 
@@ -11,14 +10,13 @@ DLLFunction dllFunction = NULL;
 
 // Load the DLL and get function pointers
 bool LoadDLL() {
-    // You can try both with a relative path and an absolute path
-    hDLL = LoadLibrary("C:\\Users\\emman\\OneDrive\\Desktop\\fingerprint-node-poc\\Innovatrics.Sdk.commons.dll");
+    hDLL = LoadLibrary("iengine_ansi_iso.dll"); // Use absolute path if needed
     if (hDLL == NULL) {
         std::cerr << "Failed to load DLL. Error: " << GetLastError() << std::endl;
         return false;
     }
-    
-    dllFunction = (DLLFunction)GetProcAddress(hDLL, "SomeFunctionName");
+
+    dllFunction = (DLLFunction)GetProcAddress(hDLL, "Init");
     if (dllFunction == NULL) {
         std::cerr << "Failed to get function address. Error: " << GetLastError() << std::endl;
         return false;
